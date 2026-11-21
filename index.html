@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>R828 Detail District · Car &amp; motorcycle detailing, Quezon City (concept)</title>
+<meta name="description" content="Concept redesign: interior detailing, paint repair, car wash and motorcycle detailing on Mindanao Ave cor. Pluto St, Project 8, Quezon City.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f1214'/%3E%3Ccircle cx='16' cy='17' r='8' fill='%23050607' stroke='%232fd3c0' stroke-width='1.5'/%3E%3Ccircle cx='13' cy='14' r='2' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+html,body{background:#0f1214;color:#f4f7f7}
+:root{
+  --char:#0f1214;--char-2:#161a1d;--steel:#22282c;--white:#f4f7f7;--white-70:rgba(244,247,247,.72);--white-45:rgba(244,247,247,.45);
+  --line:rgba(244,247,247,.10);--teal:#2fd3c0;--teal-ink:#06201d;--paint:#050607;
+  --gut:clamp(20px,4vw,48px);--ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0}
+html{overflow-x:clip;-webkit-font-smoothing:antialiased;scroll-behavior:smooth}
+body{font:400 17px/1.65 "Space Grotesk","Helvetica Neue",Arial,sans-serif}
+::selection{background:rgba(47,211,192,.3)}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+.disp{font-family:Unbounded,"Arial Black",sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:-.01em;line-height:1.02}
+.teal{color:var(--teal)}
+.btn{display:inline-flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px;padding:8px 8px 8px 28px;border-radius:999px;font:700 14px/1 "Space Grotesk",Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:transform .2s,box-shadow .25s}
+.btn i{display:grid;place-items:center;width:42px;height:42px;border-radius:10px;transform:skewX(-8deg)}
+.btn i svg{width:18px;height:18px;transform:skewX(8deg)}
+.btn--teal{background:var(--teal);color:var(--teal-ink)}.btn--teal i{background:var(--char);color:var(--white)}
+.btn--teal:hover{box-shadow:0 0 0 6px rgba(47,211,192,.18)}
+.btn--line{color:var(--white);box-shadow:inset 0 0 0 1.5px var(--teal)}.btn--line i{background:var(--teal);color:var(--teal-ink)}
+.btn--line:hover{box-shadow:inset 0 0 0 1.5px var(--teal),0 0 0 6px rgba(47,211,192,.12)}
+.btn:active{transform:scale(.97)}
+.chip{display:inline-flex;align-items:center;gap:10px;height:38px;padding:0 18px;border-radius:999px;border:1px solid rgba(47,211,192,.4);background:rgba(47,211,192,.06);font:500 12px/1 "Space Grotesk",Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase}
+.chip svg{width:12px;height:12px;color:var(--teal)}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.js [data-reveal]{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.js [data-reveal].is-in{opacity:1;transform:none}
+@keyframes sweep{0%{transform:translateX(-120%) skewX(-18deg)}60%,100%{transform:translateX(560%) skewX(-18deg)}}
+@keyframes glint{0%,100%{opacity:0}50%{opacity:1}}
+@keyframes wipe{from{clip-path:polygon(100% 0,100% 0,100% 100%,100% 100%)}to{clip-path:polygon(18% 0,100% 0,100% 100%,0 100%)}}
+@keyframes wipeM{from{clip-path:polygon(100% 12%,100% 0,100% 100%,100% 100%)}to{clip-path:polygon(0 12%,100% 0,100% 100%,0 100%)}}
+@keyframes pop{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:none}}
+@keyframes rise{from{transform:translateY(110%)}to{transform:none}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes railIn{from{opacity:0;transform:translate(20px,-50%)}to{opacity:1;transform:translate(0,-50%)}}
+
+/* ribbon / header */
+.ribbon{min-height:34px;display:flex;align-items:center;justify-content:center;padding:6px 16px;background:#000;color:rgba(255,255,255,.85);font:500 13px/1.35 "Space Grotesk",Arial,sans-serif;text-align:center;position:relative;z-index:21}
+.hdr{position:absolute;z-index:20;top:34px;left:0;right:0;height:88px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 var(--gut);background:linear-gradient(180deg,rgba(15,18,20,.9),rgba(15,18,20,0))}
+.mark{display:flex;align-items:center;gap:10px;text-decoration:none}
+.mark b{font:800 30px/1 Unbounded,"Arial Black",sans-serif;letter-spacing:-.02em}
+.mark i{width:6px;height:6px;background:var(--teal);align-self:flex-end;margin-bottom:6px}
+.mark span{font:700 10px/1.25 "Space Grotesk",Arial,sans-serif;letter-spacing:.3em;text-transform:uppercase}
+.nav{display:none;align-items:center;gap:16px}
+.nav a{font:700 13px/1 "Space Grotesk",Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;padding:8px 2px;transition:color .2s}
+.nav a:hover{color:var(--teal)}
+.nav em{font-style:normal;color:rgba(47,211,192,.4)}
+.hdr .btn{min-height:48px;padding:5px 5px 5px 20px;font-size:13px;gap:12px}
+.hdr .btn i{width:38px;height:38px}
+@media (min-width:1000px){.nav{display:flex}}
+@media (max-width:420px){.hdr .btn .lbl{display:none}.hdr .btn{padding:5px}.mark b{font-size:26px}}
+
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;overflow:hidden;background:var(--char)}
+.hex{position:absolute;inset:0;z-index:0;width:100%;height:100%;-webkit-mask-image:linear-gradient(90deg,#000 0%,transparent 60%);mask-image:linear-gradient(90deg,#000 0%,transparent 60%);pointer-events:none}
+.hcontent{position:relative;z-index:10;max-width:min(680px,54%);padding:calc(34px + 88px + clamp(40px,8vh,96px)) 0 clamp(48px,8vh,96px) var(--gut);min-height:calc(100svh - 34px);display:flex;flex-direction:column;justify-content:center}
+.hcontent .chip{align-self:flex-start;margin-bottom:26px}
+h1{font-size:clamp(44px,5vw,80px)}
+h1 .ln{display:block;overflow:hidden;padding-bottom:.04em}
+h1 .ln>span{display:block;white-space:nowrap}
+.sub{max-width:32rem;margin-top:24px;font-size:clamp(16px,1.2vw,18px);color:var(--white-70)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.js .hdr{animation:fade .5s var(--ease) both}
+.js .hcontent .chip{animation:fade .6s var(--ease) .2s both}
+.js h1 .ln>span{animation:rise .8s var(--ease) both}
+.js h1 .ln:nth-child(1)>span{animation-delay:.3s}.js h1 .ln:nth-child(2)>span{animation-delay:.41s}.js h1 .ln:nth-child(3)>span{animation-delay:.52s}
+.js .sub{animation:fadeUp .65s var(--ease) .65s both}
+.js .ctas>a:nth-child(1){animation:fadeUp .7s var(--ease) .8s both}
+.js .ctas>a:nth-child(2){animation:fadeUp .7s var(--ease) .9s both}
+
+/* slab */
+.slab{position:absolute;top:0;right:0;bottom:0;width:52%;z-index:1;clip-path:polygon(18% 0,100% 0,100% 100%,0 100%);overflow:hidden;
+  background:
+    radial-gradient(120% 60% at 70% 18%,rgba(255,255,255,.14),transparent 60%),
+    linear-gradient(168deg,transparent 38%,rgba(255,255,255,.07) 46%,transparent 54%),
+    linear-gradient(180deg,#14181b 0%,var(--paint) 55%,#0b0d0f 100%);
+  animation:wipe 1.2s var(--ease) both}
+.slab::before{content:"";position:absolute;inset:0;z-index:3;pointer-events:none;background:linear-gradient(90deg,var(--char) 0,transparent 14%)}
+.slab::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:
+    linear-gradient(100deg,transparent 0 30%,rgba(120,160,170,.06) 30.2% 34%,transparent 34.2%),
+    radial-gradient(60% 30% at 80% 92%,rgba(47,211,192,.07),transparent 70%),
+    repeating-linear-gradient(90deg,rgba(255,255,255,.012) 0 1px,transparent 1px 3px)}
+.slab .light{position:absolute;z-index:2;top:-10%;bottom:-10%;width:22%;left:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.16) 45%,rgba(220,255,250,.28) 50%,rgba(255,255,255,.16) 55%,transparent);mix-blend-mode:screen;animation:sweep 7s cubic-bezier(.45,0,.55,1) infinite 1.4s;transform:translateX(-120%) skewX(-18deg)}
+.bead{position:absolute;z-index:1;width:var(--d);height:calc(var(--d)*.86);border-radius:50% 50% 48% 52% / 55% 55% 45% 45%;
+  background:
+    radial-gradient(circle at 32% 28%,rgba(255,255,255,.95) 0 9%,rgba(255,255,255,0) 16%),
+    radial-gradient(ellipse 46% 30% at 60% 80%,rgba(190,255,248,.42),transparent 70%),
+    radial-gradient(circle at 30% 26%,rgba(255,255,255,.5) 0 4%,transparent 30%),
+    radial-gradient(circle at 50% 50%,rgba(10,12,14,0) 52%,rgba(0,0,0,.55) 70%,rgba(255,255,255,.18) 78%,transparent 80%),
+    radial-gradient(circle at 50% 40%,#1b2024,#07090a 70%);
+  box-shadow:0 calc(var(--d)*.12) calc(var(--d)*.18) rgba(0,0,0,.6)}
+.bead::after{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(circle at 34% 30%,rgba(210,255,250,.9) 0 12%,transparent 22%);opacity:0;animation:glint 7s ease-in-out infinite;animation-delay:calc(1.4s + var(--x) * 4.2s)}
+.slab .bead{animation:pop .5s cubic-bezier(.34,1.56,.64,1) both;animation-delay:calc(.6s + (1 - var(--x)) * .5s)}
+.slab .cap{position:absolute;z-index:5;left:22%;bottom:7%;background:rgba(5,6,7,.7);padding:6px 10px;border-radius:999px;font:500 11px/1.3 "Space Grotesk",Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--white-45)}
+.slab .cap::before{content:"";display:inline-block;width:22px;height:1px;background:var(--teal);vertical-align:middle;margin-right:10px}
+
+/* rail */
+.rail{display:none;position:absolute;z-index:12;right:clamp(16px,2vw,28px);top:50%;transform:translateY(-50%);width:64px;padding:18px 0;border-radius:999px;background:rgba(15,18,20,.72);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid var(--line);flex-direction:column;align-items:center;gap:16px;animation:railIn .6s var(--ease) 1s both}
+.rail .vt{writing-mode:vertical-rl;transform:rotate(180deg);display:flex;align-items:center;gap:12px;font:700 11px/1 "Space Grotesk",Arial,sans-serif;letter-spacing:.22em;color:rgba(244,247,247,.8);text-transform:uppercase}
+.rail .vt i{width:8px;height:8px;border-radius:50%;background:var(--teal);flex:none}
+.rail .r8{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;border:1px solid rgba(47,211,192,.45);font:700 12px/1 Unbounded,sans-serif;color:var(--teal)}
+.rail small{font:400 10px/1 "Space Grotesk",Arial,sans-serif;color:var(--white-45);letter-spacing:.08em;margin-top:-8px}
+@media (min-width:1000px){.rail{display:flex}}
+
+/* sections */
+.sec{position:relative;padding:clamp(88px,11vw,144px) var(--gut)}
+.wrap{max-width:1240px;margin:0 auto}
+.h2{font-size:clamp(34px,4.4vw,64px);margin-top:22px}
+.shead{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:clamp(40px,5vw,64px)}
+.shead p{max-width:24rem;color:var(--white-70);font-size:16px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{position:relative;overflow:hidden;isolation:isolate;display:flex;flex-direction:column;justify-content:space-between;gap:40px;min-height:300px;padding:28px;background:var(--char-2);border:1px solid var(--line);border-radius:22px;transition:border-color .25s,transform .25s var(--ease)}
+.card:hover{border-color:rgba(47,211,192,.5);transform:translateY(-4px)}
+.card:not(.ph){background:radial-gradient(120% 70% at 85% 0%,rgba(255,255,255,.07),transparent 55%),linear-gradient(160deg,transparent 40%,rgba(255,255,255,.035) 48%,transparent 56%),linear-gradient(180deg,#191e21,#111416)}
+.card>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.2;z-index:-1;filter:grayscale(1) contrast(1.1)}
+.card::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(22,26,29,0) 20%,rgba(22,26,29,.85) 78%)}
+.card .ico{display:grid;place-items:center;width:52px;height:52px;border:1.5px solid var(--teal);border-radius:10px;transform:skewX(-8deg);color:var(--teal);background:rgba(15,18,20,.5)}
+.card .ico svg{width:24px;height:24px;transform:skewX(8deg)}
+.card .bead{position:absolute;top:26px;right:26px;--d:12px}
+.card .bead.b2{top:44px;right:46px;--d:7px}
+.card h3{font:700 20px/1.15 Unbounded,"Arial Black",sans-serif;text-transform:uppercase;letter-spacing:-.01em;margin-bottom:10px}
+.card p{font-size:15.5px;color:var(--white-70)}
+.card .num{position:absolute;top:30px;right:70px;font:500 12px/1 "Space Grotesk",sans-serif;letter-spacing:.2em;color:var(--white-45)}
+
+.pk{background:var(--char-2);overflow:hidden}
+.pk .hexbg{position:absolute;inset:0;width:100%;height:100%;opacity:.6;pointer-events:none}
+.feat{position:relative;display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(32px,5vw,72px);align-items:center;border-radius:28px;border:1px solid rgba(47,211,192,.35);padding:clamp(28px,4vw,56px);background:linear-gradient(135deg,rgba(47,211,192,.10),transparent 55%),var(--char);overflow:hidden}
+.feat .ft{font-size:clamp(36px,4.6vw,68px);margin:22px 0 20px}
+.feat .lt>p{font-size:17px;color:var(--white-70);max-width:30rem}
+.feat .beadrow{position:absolute;right:-10px;top:-14px;width:220px;height:140px;opacity:.9;pointer-events:none}
+.feat .beadrow .bead{position:absolute}
+.steps{list-style:none;padding:0;display:grid;gap:0;margin-bottom:28px;counter-reset:s}
+.steps li{display:flex;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font:500 17px/1.4 "Space Grotesk",Arial,sans-serif}
+.steps li:first-child{border-top:1px solid var(--line)}
+.steps svg{width:22px;height:22px;color:var(--teal);flex:none}
+.steps b{font:700 13px/1 Unbounded,sans-serif;color:var(--teal);width:22px;flex:none}
+.pknote{margin-top:22px;font-size:14px;color:var(--white-45)}
+
+.find .h2{font-size:clamp(30px,3.6vw,52px)}
+.find{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.addr{font-size:18px;color:rgba(244,247,247,.8);margin-top:26px;max-width:28rem}
+.fnote{font-size:15px;color:rgba(244,247,247,.6);margin-top:14px;max-width:28rem}
+.photo{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/3;border:1px solid var(--line);background:var(--paint)}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 40%}
+.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(15,18,20,.75))}
+.photo .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-60%);z-index:2;width:84px;height:84px;display:grid;place-items:center}
+.photo .pin::before{content:"";position:absolute;inset:0;border-radius:50%;background:rgba(47,211,192,.18);box-shadow:0 0 0 1px rgba(47,211,192,.5)}
+.photo .pin svg{position:relative;width:30px;height:30px}
+.photo .pc{position:absolute;z-index:2;left:22px;top:20px;font:500 11px/1 "Space Grotesk",Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--white-45);background:rgba(15,18,20,.82);padding:7px 10px;border-radius:999px}
+.photo .pc{color:rgba(244,247,247,.7)}
+.photo .btn{position:absolute;z-index:2;left:22px;bottom:22px}
+
+.contact{background:var(--teal);color:var(--teal-ink);text-align:center;overflow:hidden}
+.contact .eyb{font:700 12px/1 "Space Grotesk",sans-serif;letter-spacing:.24em;text-transform:uppercase}
+.contact h2{font-size:clamp(40px,7vw,112px);margin:22px 0 clamp(40px,5vw,60px)}
+.crow{display:flex;flex-wrap:wrap;justify-content:center;gap:16px 40px}
+.crow a{display:inline-flex;align-items:center;gap:14px;font:700 20px/1.2 "Space Grotesk",Arial,sans-serif;text-decoration:none;padding:6px 0;text-align:left;overflow-wrap:anywhere}
+.crow a i{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:10px;transform:skewX(-8deg);background:var(--teal-ink);color:var(--teal);transition:transform .2s}
+.crow a i svg{width:19px;height:19px;transform:skewX(8deg)}
+.crow a:hover i{transform:skewX(-8deg) scale(1.08)}
+.crow a span{text-decoration:underline;text-decoration-color:rgba(6,32,29,.3);text-underline-offset:5px}
+.contact .bigb{position:absolute;pointer-events:none}
+
+footer{background:#000;color:rgba(244,247,247,.55);font-size:14px;padding:40px var(--gut)}
+footer .fw{max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px 32px}
+footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
+footer nav a{text-decoration:none;padding:4px 0}footer nav a:hover{color:var(--teal)}
+footer .mark{color:var(--white)}footer .mark b{font-size:22px}
+footer .ft{display:flex;flex-direction:column;gap:4px}
+
+.callbar{position:fixed;z-index:40;left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));height:58px;border-radius:999px;background:var(--teal);color:var(--teal-ink);display:none;align-items:center;justify-content:space-between;padding:0 8px 0 26px;font:700 15px/1 "Space Grotesk",Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;box-shadow:0 14px 30px -10px rgba(0,0,0,.7);transition:transform .35s var(--ease),opacity .35s}
+.callbar i{display:grid;place-items:center;width:42px;height:42px;border-radius:10px;transform:skewX(-8deg);background:var(--char);color:var(--white)}
+.callbar svg{width:18px;height:18px;transform:skewX(8deg)}
+@media (max-width:767px){.callbar{display:flex}.js .callbar{transform:translateY(140%);opacity:0}.js .callbar.show{transform:none;opacity:1}footer{padding-bottom:92px}}
+
+/* responsive */
+@media (max-height:720px) and (min-width:1000px){h1{font-size:clamp(40px,4.8vw,72px)}}
+@media (max-width:1100px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:999px){h1{font-size:6.4vw}.hcontent{max-width:56%}.slab{width:50%}}
+@media (max-width:899px){.feat{grid-template-columns:1fr}.find{grid-template-columns:1fr}.shead{flex-direction:column;align-items:flex-start}}
+@media (max-width:639px){
+  .hero{min-height:0;display:flex;flex-direction:column}
+  .hcontent{max-width:none;min-height:0;padding:calc(34px + 88px + 8px) var(--gut) 36px}
+  h1{font-size:clamp(32px,10.4vw,48px)}
+  .ctas .btn{width:100%}
+  .slab .bead:nth-of-type(2n){display:none}
+  .slab{position:relative;width:100%;height:52vh;min-height:320px;clip-path:polygon(0 12%,100% 0,100% 100%,0 100%);animation-name:wipeM}
+  .slab::before{display:none}
+  .slab .cap{left:20px;bottom:16px}
+  .cards{grid-template-columns:1fr}
+  .card{min-height:250px}
+  .photo .btn{left:14px;right:14px;bottom:14px}
+  .photo{aspect-ratio:4/5}
+  .crow{flex-direction:column;align-items:center}
+  .crow a{font-size:16px}
+}
+@media (max-width:560px){.ctas{flex-direction:column}}
+.done .slab,.done .slab .bead,.done .rail,.done .hdr,.done .hcontent .chip,.done h1 .ln>span,.done .sub,.done .ctas>a{animation:none!important}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js [data-reveal]{opacity:1;transform:none}html{scroll-behavior:auto}.slab .light{display:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <pattern id="hexp" width="56" height="100" patternUnits="userSpaceOnUse" patternTransform="scale(.5)">
+      <path d="M28 66L0 50L0 16L28 0L56 16L56 50L28 66L28 100M28 0L28 34L0 50L0 84L28 100L56 84L56 50L28 34" fill="none" stroke="rgba(47,211,192,.07)" stroke-width="2"/>
+    </pattern>
+    <pattern id="hexp2" width="56" height="100" patternUnits="userSpaceOnUse" patternTransform="scale(.5)">
+      <path d="M28 66L0 50L0 16L28 0L56 16L56 50L28 66L28 100M28 0L28 34L0 50L0 84L28 100L56 84L56 50L28 34" fill="none" stroke="rgba(47,211,192,.04)" stroke-width="2"/>
+    </pattern>
+  </defs>
+</svg>
+<div class="ribbon">Concept redesign by Jeig Torio · not the business's official website</div>
+
+<header class="hdr">
+  <a class="mark" href="#top" aria-label="R828 Detail District, back to top"><b>R828</b><i aria-hidden="true"></i><span>Detail<br>District</span></a>
+  <nav class="nav" aria-label="Main"><a href="#services">Services</a><em aria-hidden="true">/</em><a href="#packages">Packages</a><em aria-hidden="true">/</em><a href="#find">Find us</a><em aria-hidden="true">/</em><a href="#contact">Contact</a></nav>
+  <a class="btn btn--teal" href="tel:+639451070988"><span class="lbl">Call now</span><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></i></a>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+  <svg class="hex" aria-hidden="true" focusable="false"><rect width="100%" height="100%" fill="url(#hexp)"/></svg>
+  <div class="hcontent">
+    <span class="chip"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M6 0 7.3 4.7 12 6 7.3 7.3 6 12 4.7 7.3 0 6 4.7 4.7z" fill="currentColor"/></svg>Project 8, Quezon City</span>
+    <h1 class="disp" id="h1"><span class="ln"><span>Showroom</span></span><span class="ln"><span>shine,</span></span><span class="ln"><span class="teal">Project 8.</span></span></h1>
+    <p class="sub">Interior detailing, paint repair, car wash and motorcycle detailing at Mindanao Avenue corner Pluto Street. New shop, opened March 2026.</p>
+    <div class="ctas" id="heroCtas">
+      <a class="btn btn--teal" href="tel:+639451070988">Call +63 945 107 0988<i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></i></a>
+      <a class="btn btn--line" href="#packages">See packages<i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></i></a>
+    </div>
+  </div>
+  <div class="slab" aria-hidden="true">
+    <span class="light"></span>
+    <span class="bead" style="--d:12px;left:29.3%;top:2.6%;--x:0.29"></span><span class="bead" style="--d:27px;left:82.2%;top:3.3%;--x:0.82"></span><span class="bead" style="--d:15px;left:62.6%;top:5.2%;--x:0.63"></span><span class="bead" style="--d:18px;left:74.0%;top:6.7%;--x:0.74"></span><span class="bead" style="--d:12px;left:47.1%;top:6.9%;--x:0.47"></span><span class="bead" style="--d:8px;left:80.8%;top:7.3%;--x:0.81"></span><span class="bead" style="--d:12px;left:56.1%;top:7.8%;--x:0.56"></span><span class="bead" style="--d:10px;left:63.7%;top:8.3%;--x:0.64"></span><span class="bead" style="--d:10px;left:68.9%;top:8.7%;--x:0.69"></span><span class="bead" style="--d:12px;left:33.7%;top:11.2%;--x:0.34"></span><span class="bead" style="--d:18px;left:29.4%;top:11.3%;--x:0.29"></span><span class="bead" style="--d:8px;left:78.5%;top:11.9%;--x:0.79"></span><span class="bead" style="--d:15px;left:52.8%;top:12.5%;--x:0.53"></span><span class="bead" style="--d:40px;left:46.7%;top:12.9%;--x:0.47"></span><span class="bead" style="--d:15px;left:57.6%;top:13.1%;--x:0.58"></span><span class="bead" style="--d:8px;left:62.9%;top:15.3%;--x:0.63"></span><span class="bead" style="--d:40px;left:27.8%;top:15.6%;--x:0.28"></span><span class="bead" style="--d:8px;left:43.8%;top:15.9%;--x:0.44"></span><span class="bead" style="--d:12px;left:77.7%;top:16.3%;--x:0.78"></span><span class="bead" style="--d:8px;left:48.7%;top:16.4%;--x:0.49"></span><span class="bead" style="--d:22px;left:74.2%;top:16.8%;--x:0.74"></span><span class="bead" style="--d:15px;left:61.5%;top:17.9%;--x:0.61"></span><span class="bead" style="--d:6px;left:94.8%;top:19.6%;--x:0.95"></span><span class="bead" style="--d:27px;left:41.5%;top:19.9%;--x:0.41"></span><span class="bead" style="--d:27px;left:74.2%;top:23.1%;--x:0.74"></span><span class="bead" style="--d:8px;left:91.4%;top:25.5%;--x:0.91"></span><span class="bead" style="--d:18px;left:66.8%;top:26.0%;--x:0.67"></span><span class="bead" style="--d:12px;left:76.6%;top:27.0%;--x:0.77"></span><span class="bead" style="--d:8px;left:86.0%;top:27.7%;--x:0.86"></span><span class="bead" style="--d:48px;left:51.1%;top:27.7%;--x:0.51"></span><span class="bead" style="--d:12px;left:70.3%;top:28.5%;--x:0.70"></span><span class="bead" style="--d:8px;left:39.8%;top:29.5%;--x:0.40"></span><span class="bead" style="--d:22px;left:32.5%;top:30.1%;--x:0.32"></span><span class="bead" style="--d:18px;left:65.6%;top:30.1%;--x:0.66"></span><span class="bead" style="--d:22px;left:95.8%;top:31.4%;--x:0.96"></span><span class="bead" style="--d:6px;left:55.2%;top:31.5%;--x:0.55"></span><span class="bead" style="--d:18px;left:26.4%;top:31.8%;--x:0.26"></span><span class="bead" style="--d:12px;left:78.0%;top:31.9%;--x:0.78"></span><span class="bead" style="--d:15px;left:57.8%;top:32.6%;--x:0.58"></span><span class="bead" style="--d:8px;left:42.2%;top:34.0%;--x:0.42"></span><span class="bead" style="--d:10px;left:70.7%;top:34.5%;--x:0.71"></span><span class="bead" style="--d:18px;left:60.0%;top:34.8%;--x:0.60"></span><span class="bead" style="--d:18px;left:27.9%;top:35.2%;--x:0.28"></span><span class="bead" style="--d:18px;left:75.6%;top:35.6%;--x:0.76"></span><span class="bead" style="--d:22px;left:83.7%;top:37.0%;--x:0.84"></span><span class="bead" style="--d:8px;left:59.1%;top:38.6%;--x:0.59"></span><span class="bead" style="--d:15px;left:78.2%;top:38.7%;--x:0.78"></span><span class="bead" style="--d:8px;left:32.3%;top:39.1%;--x:0.32"></span><span class="bead" style="--d:40px;left:45.2%;top:40.3%;--x:0.45"></span><span class="bead" style="--d:8px;left:66.8%;top:40.9%;--x:0.67"></span><span class="bead" style="--d:8px;left:33.9%;top:42.4%;--x:0.34"></span><span class="bead" style="--d:48px;left:71.4%;top:43.7%;--x:0.71"></span><span class="bead" style="--d:8px;left:85.7%;top:45.2%;--x:0.86"></span><span class="bead" style="--d:10px;left:92.2%;top:45.3%;--x:0.92"></span><span class="bead" style="--d:33px;left:38.9%;top:46.4%;--x:0.39"></span><span class="bead" style="--d:15px;left:92.9%;top:47.7%;--x:0.93"></span><span class="bead" style="--d:10px;left:46.5%;top:49.0%;--x:0.47"></span><span class="bead" style="--d:12px;left:72.9%;top:49.6%;--x:0.73"></span><span class="bead" style="--d:6px;left:58.6%;top:50.6%;--x:0.59"></span><span class="bead" style="--d:8px;left:93.8%;top:51.5%;--x:0.94"></span><span class="bead" style="--d:15px;left:20.3%;top:53.2%;--x:0.20"></span><span class="bead" style="--d:12px;left:35.7%;top:53.4%;--x:0.36"></span><span class="bead" style="--d:8px;left:69.7%;top:53.6%;--x:0.70"></span><span class="bead" style="--d:8px;left:32.5%;top:53.9%;--x:0.32"></span><span class="bead" style="--d:8px;left:91.1%;top:57.5%;--x:0.91"></span><span class="bead" style="--d:27px;left:74.0%;top:57.7%;--x:0.74"></span><span class="bead" style="--d:12px;left:94.2%;top:59.0%;--x:0.94"></span><span class="bead" style="--d:10px;left:46.7%;top:59.1%;--x:0.47"></span><span class="bead" style="--d:8px;left:64.4%;top:59.8%;--x:0.64"></span><span class="bead" style="--d:22px;left:78.8%;top:60.3%;--x:0.79"></span><span class="bead" style="--d:27px;left:37.5%;top:61.0%;--x:0.37"></span><span class="bead" style="--d:18px;left:56.7%;top:61.6%;--x:0.57"></span><span class="bead" style="--d:12px;left:22.5%;top:61.6%;--x:0.23"></span><span class="bead" style="--d:33px;left:51.7%;top:62.5%;--x:0.52"></span><span class="bead" style="--d:33px;left:68.9%;top:63.4%;--x:0.69"></span><span class="bead" style="--d:6px;left:89.3%;top:65.1%;--x:0.89"></span><span class="bead" style="--d:15px;left:21.1%;top:65.8%;--x:0.21"></span><span class="bead" style="--d:10px;left:61.2%;top:66.2%;--x:0.61"></span><span class="bead" style="--d:27px;left:78.0%;top:66.7%;--x:0.78"></span><span class="bead" style="--d:8px;left:58.4%;top:67.7%;--x:0.58"></span><span class="bead" style="--d:18px;left:87.4%;top:67.9%;--x:0.87"></span><span class="bead" style="--d:27px;left:41.6%;top:67.9%;--x:0.42"></span><span class="bead" style="--d:27px;left:93.8%;top:68.0%;--x:0.94"></span><span class="bead" style="--d:8px;left:19.8%;top:68.0%;--x:0.20"></span><span class="bead" style="--d:15px;left:74.8%;top:69.1%;--x:0.75"></span><span class="bead" style="--d:48px;left:31.3%;top:70.7%;--x:0.31"></span><span class="bead" style="--d:15px;left:62.8%;top:71.3%;--x:0.63"></span><span class="bead" style="--d:12px;left:41.8%;top:72.5%;--x:0.42"></span><span class="bead" style="--d:10px;left:59.6%;top:73.2%;--x:0.60"></span><span class="bead" style="--d:6px;left:90.1%;top:74.0%;--x:0.90"></span><span class="bead" style="--d:10px;left:72.4%;top:75.6%;--x:0.72"></span><span class="bead" style="--d:8px;left:54.5%;top:76.7%;--x:0.55"></span><span class="bead" style="--d:6px;left:63.7%;top:77.9%;--x:0.64"></span><span class="bead" style="--d:12px;left:44.1%;top:78.0%;--x:0.44"></span><span class="bead" style="--d:8px;left:75.0%;top:78.4%;--x:0.75"></span><span class="bead" style="--d:15px;left:59.8%;top:79.0%;--x:0.60"></span><span class="bead" style="--d:10px;left:86.6%;top:81.1%;--x:0.87"></span><span class="bead" style="--d:12px;left:16.6%;top:81.5%;--x:0.17"></span><span class="bead" style="--d:6px;left:33.5%;top:81.7%;--x:0.33"></span><span class="bead" style="--d:12px;left:71.0%;top:81.8%;--x:0.71"></span><span class="bead" style="--d:10px;left:83.0%;top:82.3%;--x:0.83"></span><span class="bead" style="--d:15px;left:55.7%;top:83.5%;--x:0.56"></span><span class="bead" style="--d:8px;left:47.5%;top:83.6%;--x:0.47"></span><span class="bead" style="--d:15px;left:20.7%;top:84.3%;--x:0.21"></span><span class="bead" style="--d:12px;left:50.3%;top:84.8%;--x:0.50"></span><span class="bead" style="--d:12px;left:28.4%;top:85.7%;--x:0.28"></span><span class="bead" style="--d:18px;left:80.8%;top:86.9%;--x:0.81"></span><span class="bead" style="--d:27px;left:44.7%;top:89.3%;--x:0.45"></span><span class="bead" style="--d:27px;left:33.4%;top:89.7%;--x:0.33"></span><span class="bead" style="--d:18px;left:72.6%;top:90.8%;--x:0.73"></span><span class="bead" style="--d:18px;left:55.2%;top:91.0%;--x:0.55"></span><span class="bead" style="--d:33px;left:81.8%;top:91.9%;--x:0.82"></span><span class="bead" style="--d:10px;left:35.7%;top:93.4%;--x:0.36"></span><span class="bead" style="--d:8px;left:71.4%;top:93.4%;--x:0.71"></span><span class="bead" style="--d:8px;left:56.5%;top:93.5%;--x:0.57"></span><span class="bead" style="--d:27px;left:91.6%;top:94.3%;--x:0.92"></span><span class="bead" style="--d:27px;left:51.0%;top:95.9%;--x:0.51"></span><span class="bead" style="--d:8px;left:69.8%;top:96.2%;--x:0.70"></span><span class="bead" style="--d:6px;left:25.7%;top:96.2%;--x:0.26"></span><span class="bead" style="--d:10px;left:87.9%;top:96.8%;--x:0.88"></span>
+    <span class="cap">CSS render · not a photo of their work</span>
+  </div>
+  <div class="rail" aria-hidden="true">
+    <div class="vt">Interior<i></i>Paint repair<i></i>Car wash<i></i>Motorcycle</div>
+    <span class="r8">R8</span>
+    <small>EST. 2026</small>
+  </div>
+</section>
+
+<section class="sec" id="services" aria-labelledby="h-serv">
+  <div class="wrap">
+    <div class="shead" data-reveal>
+      <div><span class="chip">What we do</span>
+      <h2 class="disp h2" id="h-serv">Detailing,<br><span class="teal">inside and out.</span></h2></div>
+      <p>Cars and motorcycles, cabin to clear coat. Call the shop to talk through what yours needs.</p>
+    </div>
+    <div class="cards" data-reveal>
+      <article class="card ph">
+        <img src="assets/interior.webp" alt="" width="1000" height="750" loading="lazy" style="object-position:55% 45%">
+        <span class="num" aria-hidden="true">01</span><span class="bead" aria-hidden="true"></span><span class="bead b2" aria-hidden="true"></span>
+        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h6a2 2 0 0 1 2 2l-1 8h4a2 2 0 0 1 2 2v2H6l-1-12a2 2 0 0 1 2-2z"/><path d="M8 17v4M18 17v4"/></svg></span>
+        <div><h3>Interior detailing</h3><p>Seats, carpets, panels and every corner of the cabin, cleaned properly.</p></div>
+      </article>
+      <article class="card">
+        <span class="num" aria-hidden="true">02</span><span class="bead" aria-hidden="true"></span><span class="bead b2" aria-hidden="true"></span>
+        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="9" height="11" rx="2"/><path d="M8 10V7h5v3M13 7h3l2-2M19 9h2M18.5 12l1.5 1M18.5 6l1.5-1"/></svg></span>
+        <div><h3>Paint repair</h3><p>Scratches and paint damage repaired so the panel looks right again.</p></div>
+      </article>
+      <article class="card ph">
+        <img src="assets/car-wash.webp" alt="" width="855" height="960" loading="lazy" style="object-position:50% 55%">
+        <span class="num" aria-hidden="true">03</span><span class="bead" aria-hidden="true"></span><span class="bead b2" aria-hidden="true"></span>
+        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7S5.5 10 5.5 14.5a6.5 6.5 0 0 0 13 0C18.5 10 12 2.7 12 2.7z"/><path d="M9 15a3 3 0 0 0 3 3"/></svg></span>
+        <div><h3>Car wash</h3><p>A careful wash for regular upkeep between full details.</p></div>
+      </article>
+      <article class="card">
+        <span class="num" aria-hidden="true">04</span><span class="bead" aria-hidden="true"></span><span class="bead b2" aria-hidden="true"></span>
+        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17" r="3"/><circle cx="18.5" cy="17" r="3"/><path d="M8.5 17h6l3-8h-3M14 9l-2 5H7l-1.5-3H10"/></svg></span>
+        <div><h3>Motorcycle detailing</h3><p>Scooters and motorcycles are detailed here too.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec pk" id="packages" aria-labelledby="h-pk">
+  <svg class="hexbg" aria-hidden="true" focusable="false"><rect width="100%" height="100%" fill="url(#hexp2)"/></svg>
+  <div class="wrap" style="position:relative">
+    <div class="shead" data-reveal>
+      <div><span class="chip">Packages</span>
+      <h2 class="disp h2" id="h-pk">Pick your<br><span class="teal">level of clean.</span></h2></div>
+    </div>
+    <div class="feat" data-reveal>
+      <div class="beadrow" aria-hidden="true">
+        <span class="bead" style="--d:30px;left:40%;top:40%;--x:.4"></span><span class="bead" style="--d:14px;left:70%;top:30%;--x:.7"></span><span class="bead" style="--d:8px;left:62%;top:66%;--x:.6"></span><span class="bead" style="--d:18px;left:22%;top:70%;--x:.2"></span><span class="bead" style="--d:6px;left:30%;top:32%;--x:.3"></span><span class="bead" style="--d:10px;left:84%;top:58%;--x:.84"></span>
+      </div>
+      <div class="lt">
+        <span class="chip">Most asked about</span>
+        <h3 class="disp ft">Elite<br><span class="teal">Package</span></h3>
+        <p>A package customers mention by name. Ask the shop what's included and the price for your car or motorcycle.</p>
+      </div>
+      <div>
+        <ol class="steps">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>1 · Call or message the shop</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>2 · Tell them the car or motorcycle</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>3 · Pick a package and a slot</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>4 · Drop it off at Mindanao Ave</li>
+        </ol>
+        <a class="btn btn--teal" href="tel:+639451070988">Ask about the Elite Package<i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></i></a>
+      </div>
+    </div>
+    <p class="pknote">Other packages and all prices: ask the shop. This concept page does not list prices.</p>
+  </div>
+</section>
+
+<section class="sec" id="find" aria-labelledby="h-find">
+  <div class="wrap find">
+    <div data-reveal>
+      <span class="chip">Find us</span>
+      <h2 class="disp h2" id="h-find">Mindanao Ave<br><span class="teal">cor. Pluto St.</span></h2>
+      <p class="addr">R828 Detail District, Mindanao Avenue corner Pluto Street, Project 8, Quezon City 1106</p>
+      <p class="fnote">There's a waiting area while your car is done. Call ahead for hours and a slot.</p>
+    </div>
+    <div class="photo" data-reveal>
+      <img src="assets/hood-beads.webp" alt="Water beading on dark glossy car paint" width="1600" height="1066" loading="lazy">
+      <span class="pc">Concept photo · not their work</span>
+      <span class="pin" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#2fd3c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+      <a class="btn btn--teal" href="https://www.google.com/maps/search/?api=1&amp;query=R828+Detail+District+Mindanao+Ave+Pluto+St+Quezon+City" target="_blank" rel="noopener">Open in Google Maps<i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></i></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact" id="contact" aria-labelledby="h-con">
+  <div class="wrap" data-reveal>
+    <p class="eyb">Contact</p>
+    <h2 class="disp" id="h-con">Book your<br>detail.</h2>
+    <div class="crow">
+      <a href="tel:+639451070988"><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></i><span>+63 945 107 0988</span></a>
+      <a href="mailto:r828detaildistrict@gmail.com"><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></i><span>r828detaildistrict@gmail.com</span></a>
+      <a href="https://www.facebook.com/R828DetailDistrict" target="_blank" rel="noopener"><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5.5v3.5H8V21h3.5v-7.5H14l.5-3.5h-3V8a1 1 0 0 1 1-1H15z"/></svg></i><span>R828 on Facebook</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="fw">
+    <a class="mark" href="#top" aria-label="Back to top"><b>R828</b><i aria-hidden="true"></i><span>Detail<br>District</span></a>
+    <nav aria-label="Footer"><a href="#services">Services</a><a href="#packages">Packages</a><a href="#find">Find us</a><a href="#contact">Contact</a></nav>
+    <div class="ft">
+      <span>Concept redesign by Jeig Torio · not the business's official website</span>
+      <span>The hero paint effect is a CSS render; photos are stock concept placeholders.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="callbar" id="callbar" href="tel:+639451070988">Call R828<i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></i></a>
+
+<script>
+(function(){
+  var d=document;d.documentElement.classList.add('js');
+  setTimeout(function(){d.documentElement.classList.add('done');},2400);
+  var rv=d.querySelectorAll('[data-reveal]');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var el=e.target;setTimeout(function(){el.classList.add('is-in');},100);io.unobserve(el);}});},{threshold:.2});
+    rv.forEach(function(el){io.observe(el);});
+    var cb=d.getElementById('callbar'),c=d.getElementById('heroCtas');
+    new IntersectionObserver(function(es){es.forEach(function(e){cb.classList.toggle('show',!e.isIntersecting&&e.boundingClientRect.top<0);});}).observe(c);
+  }else{rv.forEach(function(el){el.classList.add('is-in');});d.getElementById('callbar').classList.add('show');}
+  setTimeout(function(){rv.forEach(function(el){if(el.getBoundingClientRect().top<innerHeight)el.classList.add('is-in');});},2500);
+})();
+</script>
+</body>
+</html>
